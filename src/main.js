@@ -2,9 +2,8 @@
 
 const TASK_COUNT = 3;
 
-const createMenuTemplate = () => {
-  return (
-    `<section class="control__btn-wrap">
+const createMenuTemplate = () =>(
+  `<section class="control__btn-wrap">
     <input
       type="radio"
       name="control"
@@ -33,10 +32,9 @@ const createMenuTemplate = () => {
     >
   </section>`
   );
-};
 
-const createFilterTemplate = () => {
-  return (
+
+const createFilterTemplate = () => (
     `<section class="main__filter filter container">
     <input
       type="radio"
@@ -106,10 +104,9 @@ const createFilterTemplate = () => {
     >
   </section>`
   );
-};
 
-const createBoardTemplate = () => {
-  return (
+
+const createBoardTemplate = () => (
     `<section class="board container">
       <div class="board__filter-list">
         <a href="#" class="board__filter">SORT BY DEFAULT</a>
@@ -120,10 +117,9 @@ const createBoardTemplate = () => {
       <div class="board__tasks"></div>
     </section>`
   );
-};
 
-const createTaskTemplate = () => {
-  return (
+
+const createTaskTemplate = () => (
     `<article class="card card--black">
       <div class="card__form">
         <div class="card__inner">
@@ -190,10 +186,9 @@ const createTaskTemplate = () => {
       </div>
     </article>`
   );
-};
 
-const createTaskEditTemplate = () => {
-  return (
+
+const createTaskEditTemplate = () => (
     `<article class="card card--edit card--yellow card--repeat">
       <form class="card__form" method="get">
         <div class="card__inner">
@@ -450,13 +445,12 @@ const createTaskEditTemplate = () => {
       </form>
     </article>`
   );
-};
 
-const createLoadMoreButtonTemplate = () => {
-  return (
+
+const createLoadMoreButtonTemplate = () => (
     `<button class="load-more" type="button">load more</button>`
   );
-};
+
 
 const render = (container, template, place = `beforeend`) => {
   container.insertAdjacentHTML(place, template);
